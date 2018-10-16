@@ -1,0 +1,683 @@
+/*! HTML5 Boilerplate v6.1.0 | MIT License | https://html5boilerplate.com/ */
+
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * Vendor-prefixed and regular ::selection selectors cannot be combined:
+ * https://stackoverflow.com/a/16982510/7133471
+ *
+ * Customize the background color to match your design.
+ */
+
+::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+
+
+/* ==============================start utility class============================ */
+
+
+
+/* ==============================end utility class============================ */
+/* ================================start commun class========================= */
+* {
+    font-family: "Montserrat", sans-serif;
+}
+
+.flex {
+    display: flex;
+}
+
+.esthetique, .sun {
+    padding-top: 5vh;
+    padding-bottom: 3vh;
+}
+
+.beauté, .machine, .planning {
+    width: 22%;
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    display: flex;
+    flex-direction: column;
+}
+
+.beauté p, .machine p {
+    text-align: left;
+    font-size: 13px;
+}
+
+.beauté > h5, .machine > h5 {
+    font-size: 13px;
+}
+
+.beauté span, .machine span, .planning span {
+    background-color: white;
+    padding: 3% 4%;
+    font-size: 0.9em;
+    width: 50%;
+    align-self: center;
+}
+
+.beauté h5, .planning h5, .machine h5 {
+    background-color: rgb(145, 11, 116);
+    padding: 6%;
+    margin: 0%;
+}
+
+.asideG, .asideD {
+    width: 40%;
+    height: 5vh;
+    font-size: 0.8em;
+}
+
+.containerPlan p, .parag, .beauté h5, .planning h5, .machine h5 {
+    font-size: 13px;
+}
+
+/* ================================end commun class========================= */
+
+/* ================================start header========================== */
+.contHeadHau {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+.headerHaut {
+    justify-content: center;
+    border-bottom: 1px solid rgb(199, 199, 199);
+}
+
+.asideG ul {
+    text-align: left;    
+    width: 20%;
+    height: 5vh;
+    margin-top: 0%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.asideG ul li {
+    display: inline;
+}
+
+.asideG ul li a {
+    color: rgb(199, 199, 199);
+}
+
+.asideD {
+    justify-content: flex-end;
+}
+
+label {
+    padding-top: 3%;
+    padding-right: 1%;
+    color: rgb(97, 89, 89);
+}
+
+select {
+    width: 30%;
+    height: 4vh;
+    margin-top: 1.5%;
+}
+
+.go {
+    background-color: rgb(237, 0, 140);;
+    width: 6%;
+    height: 3vh;
+    text-align: center;
+    text-decoration: none;
+    margin-top: 2%;
+    margin-left: 1%;
+    color: white;
+}
+
+.img1 {
+    width: 100%;
+    height: 20vh;
+}
+
+nav {
+    width: 80%;
+    height: 20vh;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+.nav {
+    width: 60%;
+    height: 2Ovh;
+    justify-content: space-around;
+    font-size: 0.9em;
+    list-style: none;
+    align-items: center;
+} 
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+nav a:hover {
+    color: rgb(237, 0, 140);;
+}
+
+.border {
+    border-right: 1px solid gray;
+    padding-right: 3%;
+}
+/* ================================end header========================== */
+/* ================================start main========================== */
+.containerPara {
+    background-image: url("http://www.oceaclub.com/slides/shbam.jpg");
+    height: 150vh;
+}
+
+.backgImg {
+    background-repeat: no-repeat;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.paraUN {
+    background-color: rgb(0, 0, 0);
+    opacity: 0.7;
+    width: 100%;
+    height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#para {
+    width: 90%;
+    height: 20vh;
+    color: white;
+}
+
+#vide {
+    float: right;
+    padding-right: 2%;
+}
+
+.ocea {
+    color: rgb(241, 24, 151);
+}
+
+.containerSport {
+    background-color: rgb(237, 0, 140);
+    color: white;
+}
+
+.containerSport h2 {
+    text-align: center;
+    padding-top: 3%;
+}
+
+.containerSport b {
+    font-size: 4em;
+}
+
+.blockSport {
+    width: 21%;
+    text-align: center;
+}
+
+.containerSept {
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
+}
+
+.containerSport i {
+    font-size: 4em; 
+}
+
+.containerSport a {
+    text-align: center;
+}
+
+.tester {
+    background-color: rgb(243, 201, 12);
+    width: 10%;
+    height: 4vh;
+    font-size: 0.7em;
+    padding: 1%;
+    border-radius: 5%;
+}
+
+.containerSport h3 {
+    height: 7vh;
+    text-align: center;
+}
+
+.notreContrat {
+    width: 100%;
+    height: 30vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.hETp {
+    width: 75%;
+    padding-bottom: 2%;
+}
+
+.hETp h3 {
+    font-size: 18px;
+}
+
+.hETp p {
+    font-size: 14px;
+    color: rgb(97, 93, 93);
+}
+.video {
+    width: 100%;
+    justify-content: center;
+    margin-bottom: 3%;
+}
+
+iframe {
+    width: 45%;
+    height: 50vh;
+
+}
+
+.containerPlan {
+    background-color: rgb(237, 0, 140);
+    width: 100%;
+    height: 55vh;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.blocPlan {
+    width: 85%;
+    justify-content: space-around;
+}
+
+.containerHoraire {
+    width: 70%;
+    justify-content: space-around;
+}
+
+.esth {
+    background-image: url("http://www.oceaclub.com/slides/esth.jpg");
+    height: 120vh;
+}
+
+.backgEsth {
+    background-color: rgb(175, 12, 140);
+
+}
+
+.machine h5 {
+    background-color: rgb(202, 103, 3);
+}
+
+.planning h5 {
+    background-color: rgb(202, 13, 123);
+}
+
+.blocBe {
+    width: 80%;
+    justify-content: space-around;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.num {
+    color: rgb(255, 128, 0);
+    font-size: 1.2em;
+}
+
+.numero {
+    color: rgb(145, 11, 116);
+}
+
+.numé {
+    color: rgb(237, 0, 140);
+}
+
+.bigContainer {
+    background-color: rgb(175, 12, 140);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.backSun {
+    background-image: url("http://www.oceaclub.com/slides/sun.jpg");
+    height: 120vh;
+}
+
+.sun, .containerMachine {
+    background-color: rgb(255, 128, 0);
+}
+
+.machine {
+    width: 19%;
+    height: 15vh;
+}
+
+.blocMachine {
+    width: 90%;
+    height: 30vh;
+    margin-bottom: 7%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.parag {
+    width: 80%;
+    height: 15vh;
+    margin: auto;
+    padding-top: 2%;
+    color: white
+}
+/* ================================end main========================== */
+/* ================================start footer========================== */
+ footer * {
+    color: white;
+}
+
+footer {
+    background-color: rgb(83, 80, 80);
+    width: 100%; 
+    height: 50vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer {
+    width: 80%;
+    justify-content: space-around;
+}
+
+footer h5 {
+    font-size: 1em;
+}
+
+footer p, footer ul {
+    font-size: 0.8em;
+}
+
+.footsport > ul > li > a {
+    list-style: none;
+}
+
+.footsport {
+    width: 20%;
+    height: 30vh;
+    margin-bottom: 3%;
+}
+
+.basFooter {
+    width: 80%;
+    height: 20%;
+    text-align: center;
+    padding-top: 1%;
+    border-top: 1px solid white;
+}
+/* ================================end footer========================== */
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * https://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ *
+ * 1. For long content, line feeds are not interpreted as spaces and small width
+ *    causes content to wrap 1 word per line:
+ *    https://medium.com/@jessebeach/beware-smushed-off-screen-accessible-text-5952a4c2cbfe
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+    white-space: nowrap; /* 1 */
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+    white-space: inherit;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (-webkit-min-device-pixel-ratio: 1.25),
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   https://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+    }
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}
