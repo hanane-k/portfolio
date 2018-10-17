@@ -97,418 +97,61 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-
-
-/* ==============================start utility class============================ */
-
-
-
-/* ==============================end utility class============================ */
-/* ================================start commun class========================= */
-* {
-    font-family: "Montserrat", sans-serif;
+/* ==========start utility class========= */
+.mobileOnly {
+    display: block;
+  }
+ 
+.touchPad, .desktop {
+display: none;
 }
-
-.flex {
-    display: flex;
+/* ==========end utility class========= */
+/* ==========start common class========= */
+img {
+    width: 100%;
 }
+h1, h2, h3, h4, h5 {
 
-.esthetique, .sun {
-    padding-top: 5vh;
-    padding-bottom: 3vh;
 }
-
-.beauté, .machine, .planning {
-    width: 22%;
-    text-align: center;
-    color: white;
-    font-size: 1em;
-    display: flex;
-    flex-direction: column;
-}
-
-.beauté p, .machine p {
-    text-align: left;
-    font-size: 13px;
-}
-
-.beauté > h5, .machine > h5 {
-    font-size: 13px;
-}
-
-.beauté span, .machine span, .planning span {
-    background-color: white;
-    padding: 3% 4%;
-    font-size: 0.9em;
-    width: 50%;
-    align-self: center;
-}
-
-.beauté h5, .planning h5, .machine h5 {
-    background-color: rgb(145, 11, 116);
-    padding: 6%;
+body {
     margin: 0%;
+    font-family: "opensans", sans-serif;
 }
-
-.asideG, .asideD {
-    width: 40%;
-    height: 5vh;
-    font-size: 0.8em;
-}
-
-.containerPlan p, .parag, .beauté h5, .planning h5, .machine h5 {
-    font-size: 13px;
-}
-
-/* ================================end commun class========================= */
-
-/* ================================start header========================== */
-.contHeadHau {
-    position: fixed;
-    width: 100%;
-    background-color: white;
-}
-
-.headerHaut {
-    justify-content: center;
-    border-bottom: 1px solid rgb(199, 199, 199);
-}
-
-.asideG ul {
-    text-align: left;    
-    width: 20%;
-    height: 5vh;
-    margin-top: 0%;
-    align-items: center;
-    justify-content: space-around;
-}
-
-.asideG ul li {
-    display: inline;
-}
-
-.asideG ul li a {
-    color: rgb(199, 199, 199);
-}
-
-.asideD {
-    justify-content: flex-end;
-}
-
-label {
-    padding-top: 3%;
-    padding-right: 1%;
-    color: rgb(97, 89, 89);
-}
-
-select {
-    width: 30%;
-    height: 4vh;
-    margin-top: 1.5%;
-}
-
-.go {
-    background-color: rgb(237, 0, 140);;
-    width: 6%;
-    height: 3vh;
-    text-align: center;
-    text-decoration: none;
-    margin-top: 2%;
-    margin-left: 1%;
-    color: white;
-}
-
-.img1 {
-    width: 100%;
-    height: 20vh;
-}
-
-nav {
-    width: 80%;
-    height: 20vh;
-    justify-content: space-between;
-    margin-left: 10%;
-}
-
-.nav {
-    width: 60%;
-    height: 2Ovh;
-    justify-content: space-around;
-    font-size: 0.9em;
-    list-style: none;
-    align-items: center;
-} 
-
 a {
-    text-decoration: none;
-    color: #000;
-}
-
-nav a:hover {
-    color: rgb(237, 0, 140);;
-}
-
-.border {
-    border-right: 1px solid gray;
-    padding-right: 3%;
-}
-/* ================================end header========================== */
-/* ================================start main========================== */
-.containerPara {
-    background-image: url("http://www.oceaclub.com/slides/shbam.jpg");
-    height: 150vh;
-}
-
-.backgImg {
-    background-repeat: no-repeat;
-    flex-direction: column;
-    justify-content: flex-end;
-}
-
-.paraUN {
-    background-color: rgb(0, 0, 0);
-    opacity: 0.7;
-    width: 100%;
-    height: 40vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#para {
-    width: 90%;
-    height: 20vh;
-    color: white;
-}
-
-#vide {
-    float: right;
-    padding-right: 2%;
-}
-
-.ocea {
-    color: rgb(241, 24, 151);
-}
-
-.containerSport {
-    background-color: rgb(237, 0, 140);
-    color: white;
-}
-
-.containerSport h2 {
-    text-align: center;
-    padding-top: 3%;
-}
-
-.containerSport b {
-    font-size: 4em;
-}
-
-.blockSport {
-    width: 21%;
-    text-align: center;
-}
-
-.containerSept {
-    width: 70%;
-    display: flex;
-    justify-content: space-around;
-    margin: auto;
-}
-
-.containerSport i {
-    font-size: 4em; 
-}
-
-.containerSport a {
-    text-align: center;
-}
-
-.tester {
-    background-color: rgb(243, 201, 12);
-    width: 10%;
-    height: 4vh;
-    font-size: 0.7em;
-    padding: 1%;
-    border-radius: 5%;
-}
-
-.containerSport h3 {
-    height: 7vh;
-    text-align: center;
-}
-
-.notreContrat {
-    width: 100%;
-    height: 30vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.hETp {
-    width: 75%;
-    padding-bottom: 2%;
-}
-
-.hETp h3 {
-    font-size: 18px;
-}
-
-.hETp p {
-    font-size: 14px;
-    color: rgb(97, 93, 93);
-}
-.video {
-    width: 100%;
-    justify-content: center;
-    margin-bottom: 3%;
-}
-
-iframe {
-    width: 45%;
-    height: 50vh;
-
-}
-
-.containerPlan {
-    background-color: rgb(237, 0, 140);
-    width: 100%;
-    height: 55vh;
-    justify-content: center;
-    align-items: center;
-    color: white;
-}
-
-.blocPlan {
-    width: 85%;
-    justify-content: space-around;
-}
-
-.containerHoraire {
-    width: 70%;
-    justify-content: space-around;
-}
-
-.esth {
-    background-image: url("http://www.oceaclub.com/slides/esth.jpg");
-    height: 120vh;
-}
-
-.backgEsth {
-    background-color: rgb(175, 12, 140);
-
-}
-
-.machine h5 {
-    background-color: rgb(202, 103, 3);
-}
-
-.planning h5 {
-    background-color: rgb(202, 13, 123);
-}
-
-.blocBe {
-    width: 80%;
-    justify-content: space-around;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-.num {
-    color: rgb(255, 128, 0);
-    font-size: 1.2em;
-}
-
-.numero {
-    color: rgb(145, 11, 116);
-}
-
-.numé {
-    color: rgb(237, 0, 140);
-}
-
-.bigContainer {
-    background-color: rgb(175, 12, 140);
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.backSun {
-    background-image: url("http://www.oceaclub.com/slides/sun.jpg");
-    height: 120vh;
-}
-
-.sun, .containerMachine {
-    background-color: rgb(255, 128, 0);
-}
-
-.machine {
-    width: 19%;
-    height: 15vh;
-}
-
-.blocMachine {
-    width: 90%;
-    height: 30vh;
-    margin-bottom: 7%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-.parag {
-    width: 80%;
-    height: 15vh;
-    margin: auto;
-    padding-top: 2%;
-    color: white
-}
-/* ================================end main========================== */
-/* ================================start footer========================== */
- footer * {
-    color: white;
-}
-
-footer {
-    background-color: rgb(83, 80, 80);
-    width: 100%; 
-    height: 50vh;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.footer {
-    width: 80%;
-    justify-content: space-around;
-}
-
-footer h5 {
-    font-size: 1em;
-}
-
-footer p, footer ul {
-    font-size: 0.8em;
-}
-
-.footsport > ul > li > a {
     list-style: none;
+    text-decoration: none;
 }
+/* ==========end common class========= */
 
-.footsport {
-    width: 20%;
-    height: 30vh;
-    margin-bottom: 3%;
-}
+/* =======start header========== */
+/* ===vav==== */
+/* ====name and first-name=== */
+/* =======end header========== */
 
-.basFooter {
-    width: 80%;
-    height: 20%;
-    text-align: center;
-    padding-top: 1%;
-    border-top: 1px solid white;
-}
-/* ================================end footer========================== */
+
+/* =======start main========== */
+
+/* =======end main========== */
+
+
+/* =======start footer========== */
+/* =======end footer========== */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* ==========================================================================
    Helper classes
    ========================================================================== */
