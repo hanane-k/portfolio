@@ -100,57 +100,217 @@ textarea {
 /* ==========start utility class========= */
 .mobileOnly {
     display: block;
-  }
+}
  
 .touchPad, .desktop {
 display: none;
 }
+h1, h2, h3, h4, h5 {
+    font-family: 'Acme', sans-serif;
+}
+.flex {
+    display: flex;
+}
+.wrap {
+    flex-wrap: wrap;
+}
+.between {
+    justify-content: space-between;
+    align-items: center;
+}
+.around {
+    justify-content: space-around;
+    align-items: center;
+}
+.separateItems * {
+    margin-right: 0.5em;
+  }
+
 /* ==========end utility class========= */
 /* ==========start common class========= */
 img {
     width: 100%;
 }
-h1, h2, h3, h4, h5 {
-
-}
 body {
     margin: 0%;
-    font-family: "opensans", sans-serif;
+    font-family: 'El Messiri', sans-serif;    
 }
 a {
-    list-style: none;
+    color: #000;
+    font-weight: bold;
     text-decoration: none;
+}
+body {
+    text-align: center;
+}
+i {
+    font-size: 2em;
+    cursor: pointer;
+}
+i:hover, a:hover, .competance:hover {
+    color: #ff0052;
+    background-color: white;
+}
+.column {
+    flex-direction: column;
+}
+.center {
+    justify-content: center;
+    align-items: center;
 }
 /* ==========end common class========= */
 
 /* =======start header========== */
-/* ===vav==== */
+/* ====logo==== */
+.logo {
+    width: 25%;
+}
+.containerLogo {
+    justify-content: flex-start;
+}
+/* ===nav==== */
+.navMob {
+    font-size: 0.7em;
+}
+.containerNavM {
+    width: 90%;
+}
 /* ====name and first-name=== */
-/* =======end header========== */
+h1, h2, .bouton {
+    color: white;
+}
+h2 > span {
+    color: #ff0052;
+    font-size: 1.3em;
+}
 
+/* =======end header========== */
+.nom {
+    background-color:#000;
+    opacity: 0.7;
+    width: 100%;
+    padding: 1.5em 0;
+}
 
 /* =======start main========== */
+.containerNom {
+    background-image: url("http://www.stephane-delpeyroux.com/photos/large/169.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+}
+.projet, .competance {
+    width: 90%;
+    margin-bottom: 2%;
+}
+.competance {
+    background-color: beige;
+}
+.competance {
+    width: 80%;
+    margin: 2%;
+}
+.projet img {
+    width: 80%;
+}
+.bouton {
+    background-color: #ff0052;
+    padding: 7px 5px;
+    border-radius: 10%;
+}
+/* ====contact formular=== */
+.form .bouton {
+cursor: pointer;
+}
+#submit {
+    font-weight: bold;
+}
+.input {
+    width: 90%;
+    height: 7vh;
+    margin: 5% 0%;
+}
+#message {
+    height: 20vh;
+    padding: 0;
+}
+#submit {
+    width: 100px;
+}
+/* ===end contact formular=== */
 
-/* =======end main========== */
+@media screen and (min-width: 600px) {
+    .mobileOnly {
+        display: none;
+    }
+    .touchPad {
+        display: block;
+    }
+    .logo {
+        width: 150px;
+    }
+    .competance {
+        width: 40%;
+        height: 55vh;
+    }
+    .header, .navPc, .contai {
+        display: flex;
+        justify-content: space-around;
+    }
+    .projet {
+        width: 40%;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .mobileOnly {
+        display: none;
+    }
+    .dosktop {
+        display: block;
+    }
+    .logo {
+        margin-left: 4%;
+    }
+    .competance {
+        width: 25%;
+        height: 300px;
+    }
+    p {
+        font-size: 1.4em;
+    }
+    h1 {
+        font-size: 2.5em;
+    }
+    h3 {
+        font-size: 1.6em;
+    }
+    .header, .navPc {
+        display: flex;
+    }
+    .navPc {
+        width: 100%;
+        justify-content: space-around;
+        align-self: center;
+    }
+    .cont {
+        width: 70%;
+    }
+    .projet {
+        width: 30%;
+    }
+
+}
+        /* =======end main========== */
 
 
 /* =======start footer========== */
+footer {
+    padding: 5% 0;
+}
+.bouton > span {
+    font-size: 0.7em;
+}
 /* =======end footer========== */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /* ==========================================================================
    Helper classes

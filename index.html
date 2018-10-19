@@ -14,24 +14,29 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-</head>
+  <link href="https://fonts.googleapis.com/css?family=Acme|El+Messiri" rel="stylesheet"> </head>
 
 <body>
   <!-- =============start header============== -->
   <header>
-    <div class="header">
-      <img class="logo" src="img/image1.jpeg" alt="logo">
-      <nav class="desktop touchPad">
-        <p class="nav"><a href="">A Propos</a></p>
-        <p class="nav"><a href="">Compétences</a></p>
-        <p class="nav"><a href="">Portfolio</a></p>
-      </nav>
-      <nav class="mobileOnly">
-        <i class="fas fa-bars"></i>
-        <p class="navMob nav"><a href="">A Propos</a></p>
-        <p class="navMob nav"><a href="">Compétences</a></p>
-        <p class="navMob nav"><a href="">Portfolio</a></p>
-      </nav>
+    <div id="header" class="header center">
+      <a class="containerLogo flex" href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
+      <div class="flex center">
+        <nav class="containerNavM mobileOnly flex between separateItems">
+          <p class="navMob nav"><a href="#propos">A Propos</a></p>
+          <p class="navMob nav"><a href="#compétence">Compétences</a></p>
+          <p class="navMob nav"><a href="#portfolio">Portfolio</a></p>
+          <p class="navMob nav"><a href="contact.html">Contactez moi</a></p>
+        </nav>
+      </div>
+      <div class="cont">
+        <nav class="desktop touchPad contai separateItems">
+          <p class="nav fle"><a href="#propos">A Propos</a></p>
+          <p class="nav"><a href="#compétence">Compétences</a></p>
+          <p class="nav"><a href="#portfolio">Portfolio</a></p>
+          <p class="nav"><a href="contact.html">Contactez moi</a></p>
+        </nav>
+      </div>
     </div>
   </header>
   <!-- =============end header============== -->
@@ -39,71 +44,76 @@
 
   <!-- =============start main============== -->
   <main>
-    <div class="containerNom">
+    <div class="containerNom flex center">
       <section class="nom">
-        <h1>Hanane NAMOUN-KARRAD</h1>
+        <h1>Hanane NAMOUN</h1>
         <h2>Développement web</h2>
-        <h2>Back-end</h2>
+        <h2><span>Back-end</span></h2>
       </section>
     </div>
-    <section>
-      <h3>A Propos</h3>
+    <section class="aPropo">
+      <h3 id="propos">A Propos</h3>
       <p></p>
     </section>
-    <section>
-      <h3>Compétences</h3>
-      <p>Des solutions sur mesure, pour vous faciliter la vie et développer votre activité !</p>
-      <div>
-        <h4>Développement</h4>
-        <i class="fas fa-cogs"></i>
-        <p>Création de sites</p>
-      </div>
-      <div>
-        <h4>Intégration</h4>
-        <i class="fas fa-code"></i>
-        <p> HTML 5 / CSS 3 Javascript & PHP. Framework Bootstrap Compatibilité navigateurs (Firefox, Chrome).</p>
-      </div>
-      <div>
-        <h4>Responsive Design</h4>
-        <i class="fas fa-desktop"></i>
-        <p>Réalisation de charte graphique personnalisée pour votre site web,adaptés à tout type d'écran : Ordiantaur, smartphone, tablette ..</p>
+    <section class="containerComp flex column center">
+      <h3 id="compétence">Compétences</h3>
+      <p>Des solutions sur mesure, pour vous faciliter la vie<br>et développer votre activité !</p>
+      <div class="flex center wrap">
+        <div class="competance">
+          <h4>Développement</h4>
+          <i class="fas fa-cogs"></i>
+          <p>Création de sites</p>
+        </div>
+        <div class="competance">
+          <h4>Intégration</h4>
+          <i class="fas fa-code"></i>
+          <p> HTML 5 / CSS 3 Javascript & PHP. Framework Bootstrap Compatibilité navigateurs (Firefox, Chrome).</p>
+        </div>
+        <div class="competance">
+          <h4>Responsive Design</h4>
+          <i class="fas fa-desktop"></i>
+          <p>Réalisation de charte graphique personnalisée pour votre site web,adaptés à tout type d'écran : Ordiantaur, smartphone, tablette ..</p>
+        </div>
       </div>
     </section>
-    <section>
-      <h3>Portfolio</h3>
-      <p>Aperçu des différents travaux réalisés.</p>
-      <div>
-        <h4>Le CV</h4>
-        <img src="img/CV.png" alt="image de CV">
-        <p>Une réalisation d'un CV</p>
-        <p><a href="">VOIR</a></p>
-      </div>
-      <div>
-        <img src="img/twitter.jpg" alt="image de twitter">
-        <h4>TWITTER</h4>
-        <p>Une reproduction du site twitter</p>
-        <p><a href="">VOIR</a></p>
-      </div>
-      <div>
-        <img src="img/TerreDeGeek.png" alt="image d'un sit e-commerce">
-        <p>Une réalisation d'un site e-commerce</p>
-        <p><a href="">VOIR</a></p>
-      </div>
-      <div>
-        <h4>OCEA-CLUB DE SPORT</h4>
-        <img src="img/oceaclub.jpg" alt="image de ">
-        <p>Une reproduction du site OCEA-CLUB</p>
-        <p><a href="">VOIR</a></p>
-      </div>
-      <div>
-        <h4>LE MONDE D'EMMANUELLE</h4>
-        <img src="img/Le monde d'Emmanuelle.jpg" alt="image de ">
-        <p>Une réalisation d'un site de Patisserie</p>
-        <p><a href="">VOIR</a></p>
+    <section class="flex column center">
+      <h3 id="portfolio">Portfolio</h3>
+      <p>Aperçu de mes différents Projets réalisés.</p>
+      <div class="flex center wrap">
+        <div class="projet">
+          <h4>Le CV</h4>
+          <img src="img/CV.png" alt="image de CV">
+          <p>Une réalisation d'un CV</p>
+          <p><a class="bouton" href="cv.html">VOIR</a></p>
+        </div>
+        <div class="projet">
+          <h4>TWITTER</h4>
+          <img src="img/twitter.jpg" alt="image de twitter">
+          <p>Une reproduction du site twitter</p>
+          <p><a class="bouton" href="twitter.html">VOIR</a></p>
+        </div>
+        <div class="projet">
+          <h4>TERRE DE GEEK</h4>
+          <img src="img/TerreDeGeek.png" alt="image d'un sit e-commerce">
+          <p>Une réalisation d'un site e-commerce</p>
+          <p><a class="bouton" href="terredegeek.html">VOIR</a></p>
+        </div>
+        <div class="projet">
+          <h4>OCEA-CLUB DE SPORT</h4>
+          <img src="img/ocea.png" alt="image de ">
+          <p>Une reproduction du site OCEA-CLUB</p>
+          <p><a class="bouton" href="ocea.html">VOIR</a></p>
+        </div>
+        <div class="projet">
+          <h4>LE MONDE D'EMMANUELLE</h4>
+          <img src="img/le-monde-d'emmanuelle.png" alt="image de ">
+          <p>Une réalisation d'un site de Patisserie</p>
+          <p><a class="bouton" href="emmanuelle.html">VOIR</a></p>
+        </div>
       </div>
     </section>
     <div>
-      <h5><a href="header"><i class="fas fa-arrow-up"></i>haut de page</a></h5>
+      <h5><a class="bouton" href="#header"><span><i class="fas fa-arrow-up"></i></span> haut de page</a></h5>
     </div>    
   </main>
   <!-- =============end main============== -->
@@ -111,12 +121,13 @@
 
   <!-- =============start footer============== -->
   <footer>
-    <nav class="desktop">
-      <p class="nav"><a href="">A Propos</a></p>
-      <p class="nav"><a href="">Compétences</a></p>
-      <p class="nav"><a href="">Portfolio</a></p>
+    <nav class="desktop separateItems">
+      <p class="nav"><a href="#propos">A Propos</a></p>
+      <p class="nav"><a href="#compétence">Compétences</a></p>
+      <p class="nav"><a href="#portfolio">Portfolio</a></p>
+      <p class="nav"><a href="contact.html">Contactez moi</a></p>
     </nav>
-    <div>
+    <div class="flex around separateItems">
       <a href=""><i class="fab fa-twitter"></i></a>
       <a href=""><i class="fab fa-google-plus-g"></i></a>
       <a href=""><i class="fab fa-slack-hash"></i></a>
