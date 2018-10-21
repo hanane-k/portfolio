@@ -123,7 +123,7 @@ h1, h2, h3, h4, h5 {
     align-items: center;
 }
 .separateItems * {
-    margin-right: 0.5em;
+    margin: 0.3em;
   }
 
 /* ==========end utility class========= */
@@ -164,6 +164,7 @@ i:hover, a:hover, .competance:hover {
 /* ====logo==== */
 .logo {
     width: 25%;
+    margin: auto;
 }
 .containerLogo {
     justify-content: flex-start;
@@ -179,7 +180,7 @@ i:hover, a:hover, .competance:hover {
 h1, h2, .bouton {
     color: white;
 }
-h2 > span {
+h2 > span, .span {
     color: #ff0052;
     font-size: 1.3em;
 }
@@ -199,19 +200,33 @@ h2 > span {
     background-size: cover;
     height: 80vh;
 }
+.aPropo p {
+    width: 70%;
+}
 .projet, .competance {
     width: 90%;
     margin-bottom: 2%;
 }
-.competance {
+.competance, .language {
     background-color: beige;
 }
 .competance {
     width: 80%;
     margin: 2%;
 }
-.projet img {
+.imgProjet {
     width: 80%;
+}
+.language {
+    padding: 5% 0;
+}
+.imgLanguage {
+    width: 40%;
+    cursor: pointer;
+    margin: 1%;
+}
+.contLang {
+    width: 90%;
 }
 .bouton {
     background-color: #ff0052;
@@ -260,6 +275,9 @@ cursor: pointer;
     .projet {
         width: 40%;
     }
+    .imgLanguage {
+        width: 25%;
+    }
 }
 @media screen and (min-width: 1200px) {
     .mobileOnly {
@@ -298,7 +316,9 @@ cursor: pointer;
     .projet {
         width: 30%;
     }
-
+    .imgLanguage {
+        width: 15%;
+    }
 }
         /* =======end main========== */
 

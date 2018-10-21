@@ -22,7 +22,7 @@
     <div id="header" class="header center">
       <a class="containerLogo flex" href="index.html"><img class="logo" src="img/logo.png" alt="logo"></a>
       <div class="flex center">
-        <nav class="containerNavM mobileOnly flex between separateItems">
+        <nav class="containerNavM mobileOnly flex between">
           <p class="navMob nav"><a href="#propos">A Propos</a></p>
           <p class="navMob nav"><a href="#compétence">Compétences</a></p>
           <p class="navMob nav"><a href="#portfolio">Portfolio</a></p>
@@ -48,15 +48,15 @@
       <section class="nom">
         <h1>Hanane NAMOUN</h1>
         <h2>Développement web</h2>
-        <h2><span>Back-end</span></h2>
+        <h2><span class="span">Back-end</span></h2>
       </section>
     </div>
-    <section class="aPropo">
-      <h3 id="propos">A Propos</h3>
-      <p></p>
+    <section class="aPropo flex column center">
+      <a><h3 id="propos">A Propos</h3></a>
+      <p><strong>Bonjour</strong> je m'appelle <span class="span">Hanane</span>,<br>Je suis développeuse web junior, <span class="span">Back-End</span>.<br> Munie d'un Master 2 en Gestion de l'Environnement, et actuellement en formation de Développement WEB et WEB-Mobile depuis Septembre 2018 à l'ADEP de Roubaix, grâce à la quelle je développe mes qualités professionnelles.<br>Ambitieuse et créative sont juste un échantillon de mes atouts professionnels, avec un très bon esprit de groupe et à la fois autonome; je saurai m'integrer à tout type de projet.</p>
     </section>
     <section class="containerComp flex column center">
-      <h3 id="compétence">Compétences</h3>
+      <a><h3 id="compétence">Compétences</h3></a>
       <p>Des solutions sur mesure, pour vous faciliter la vie<br>et développer votre activité !</p>
       <div class="flex center wrap">
         <div class="competance">
@@ -77,44 +77,60 @@
       </div>
     </section>
     <section class="flex column center">
-      <h3 id="portfolio">Portfolio</h3>
+      <a><h3 id="portfolio">Portfolio</h3></a>
       <p>Aperçu de mes différents Projets réalisés.</p>
       <div class="flex center wrap">
         <div class="projet">
           <h4>Le CV</h4>
-          <img src="img/CV.png" alt="image de CV">
+          <img class="imgProjet" src="img/CV.png" alt="image de CV">
           <p>Une réalisation d'un CV</p>
           <p><a class="bouton" href="cv.html">VOIR</a></p>
         </div>
         <div class="projet">
           <h4>TWITTER</h4>
-          <img src="img/twitter.jpg" alt="image de twitter">
+          <img class="imgProjet" src="img/twitter.jpg" alt="image de twitter">
           <p>Une reproduction du site twitter</p>
           <p><a class="bouton" href="twitter.html">VOIR</a></p>
         </div>
         <div class="projet">
           <h4>TERRE DE GEEK</h4>
-          <img src="img/TerreDeGeek.png" alt="image d'un sit e-commerce">
+          <img class="imgProjet" src="img/TerreDeGeek.png" alt="image d'un sit e-commerce">
           <p>Une réalisation d'un site e-commerce</p>
           <p><a class="bouton" href="terredegeek.html">VOIR</a></p>
         </div>
         <div class="projet">
           <h4>OCEA-CLUB DE SPORT</h4>
-          <img src="img/ocea.png" alt="image de ">
+          <img class="imgProjet" src="img/ocea.png" alt="image de ">
           <p>Une reproduction du site OCEA-CLUB</p>
           <p><a class="bouton" href="ocea.html">VOIR</a></p>
         </div>
         <div class="projet">
           <h4>LE MONDE D'EMMANUELLE</h4>
-          <img src="img/le-monde-d'emmanuelle.png" alt="image de ">
+          <img class="imgProjet" src="img/le-monde-d'emmanuelle.png" alt="image de ">
           <p>Une réalisation d'un site de Patisserie</p>
           <p><a class="bouton" href="emmanuelle.html">VOIR</a></p>
         </div>
       </div>
     </section>
+    <section class=" flex column center wrap">
+      <div>
+        <a><h3>Outils</h3></a>
+        <p>Technologie utilisée.</p>
+      </div>
+      <div class="contLang language wrap">
+        <img class="imgLanguage" src="img/PHP-logo.png" alt="image de php">
+        <img class="imgLanguage" src="img/javascript.png" alt="image de Javascript">
+        <img class="imgLanguage" src="img/HTML5.png" alt="image de html5">
+        <img class="imgLanguage" src="img/css3.png" alt="image de css3">
+        <img class="imgLanguage" src="img/my-sql.png" alt="image de my-sql">
+        <img class="imgLanguage" src="img/git.png" alt="image de git">
+        <img class="imgLanguage" src="img/linux.jpg" alt="image de linux">
+        <img class="imgLanguage" src="img/github.png" alt="image de github">
+      </div>
+    </section> 
     <div>
       <h5><a class="bouton" href="#header"><span><i class="fas fa-arrow-up"></i></span> haut de page</a></h5>
-    </div>    
+    </div>   
   </main>
   <!-- =============end main============== -->
   
@@ -127,7 +143,7 @@
       <p class="nav"><a href="#portfolio">Portfolio</a></p>
       <p class="nav"><a href="contact.html">Contactez moi</a></p>
     </nav>
-    <div class="flex around separateItems">
+    <div class="flex around">
       <a href=""><i class="fab fa-twitter"></i></a>
       <a href=""><i class="fab fa-google-plus-g"></i></a>
       <a href=""><i class="fab fa-slack-hash"></i></a>
