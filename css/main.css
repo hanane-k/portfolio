@@ -147,7 +147,7 @@ i {
     font-size: 2em;
     cursor: pointer;
 }
-i:hover, a:hover, .competance:hover {
+i:hover, a:hover, .competance:hover, .navPc:hover, .contLang:hover {
     color: #ff0052;
     background-color: white;
 }
@@ -200,7 +200,7 @@ h2 > span, .span {
     background-size: cover;
     height: 80vh;
 }
-.aPropo p {
+.aPropo p, .containerComp > p, .portf > p {
     width: 70%;
 }
 .projet, .competance {
@@ -255,7 +255,7 @@ cursor: pointer;
 /* ===end contact formular=== */
 
 @media screen and (min-width: 600px) {
-    .mobileOnly {
+    .mobileOnly, .desktop {
         display: none;
     }
     .touchPad {
@@ -283,7 +283,7 @@ cursor: pointer;
     .mobileOnly {
         display: none;
     }
-    .dosktop {
+    .desktop {
         display: block;
     }
     .logo {
@@ -302,15 +302,13 @@ cursor: pointer;
     h3 {
         font-size: 1.6em;
     }
-    .header, .navPc {
+    .header, .navdesk {
         display: flex;
     }
-    .navPc {
-        width: 100%;
-        justify-content: space-around;
-        align-self: center;
+    .navdesk {
+        margin: auto;
     }
-    .cont {
+    .cont, .navdesk {
         width: 70%;
     }
     .projet {
@@ -320,15 +318,18 @@ cursor: pointer;
         width: 15%;
     }
 }
-        /* =======end main========== */
+/* =======end main========== */
 
 
 /* =======start footer========== */
 footer {
-    padding: 5% 0;
+    padding: 3% 0;
 }
 .bouton > span {
     font-size: 0.7em;
+}
+footer .reseau {
+    margin-top: 5%;
 }
 /* =======end footer========== */
 
