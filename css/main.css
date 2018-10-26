@@ -200,7 +200,7 @@ h2 > span, .span {
     background-size: cover;
     height: 80vh;
 }
-.aPropo p, .containerComp > p, .portf > p {
+.aPropo p, .containerComp > p, .portf > p, .projet p, .singlPr p {
     width: 70%;
 }
 .projet, .competance {
@@ -277,6 +277,12 @@ cursor: pointer;
     }
     .imgLanguage {
         width: 25%;
+    }
+    .smal {
+        width:100%;
+    }
+    .cont {
+        width: 70%;
     }
 }
 @media screen and (min-width: 1200px) {
