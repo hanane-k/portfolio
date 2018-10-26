@@ -200,28 +200,24 @@ h2 > span, .span {
     background-size: cover;
     height: 80vh;
 }
-.aPropo p, .containerComp > p, .portf > p, .projet p, .singlPr p {
+.aPropo p, .containerComp > p, .portf > p, .projet p, .singlPr p, {
     width: 70%;
 }
 .projet, .competance {
     width: 90%;
-    margin-bottom: 2%;
+    margin: 2% 1%;
 }
 .competance, .language {
     background-color: beige;
 }
-.competance {
-    width: 80%;
-    margin: 2%;
-}
-.imgProjet {
+.imgProjet, .competance p {
     width: 80%;
 }
 .language {
     padding: 5% 0;
 }
 .imgLanguage {
-    width: 40%;
+    width: 10%;
     cursor: pointer;
     margin: 1%;
 }
@@ -275,9 +271,6 @@ cursor: pointer;
     .projet {
         width: 40%;
     }
-    .imgLanguage {
-        width: 25%;
-    }
     .smal {
         width:100%;
     }
@@ -319,9 +312,6 @@ cursor: pointer;
     }
     .projet {
         width: 30%;
-    }
-    .imgLanguage {
-        width: 15%;
     }
 }
 /* =======end main========== */
