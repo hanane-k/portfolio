@@ -122,13 +122,14 @@ h1, h2, h3, h4, h5 {
     justify-content: space-around;
     align-items: center;
 }
-i:hover, a:hover, .competence:hover, .navPc:hover, .contLang:hover, h2 > span, .span {
+i:hover, a:hover, .competence:hover, .navPc:hover, h2 > span, .span {
     color: #ff0052;
+    border: none;
 }
 h1, h2, .bouton {
     color: white;
 }
-i:hover, a:hover, .competence:hover, .navPc:hover, .contLang:hover {
+i:hover, a:hover, .competence:hover, .navPc:hover {
     background-color: white;
 }
 .column {
@@ -195,19 +196,22 @@ h2 > span, .span {
 }
 
 /* =======start main========== */
+.avatar {
+    width: 20%;
+}
 .containerNom {
     background-image: url("http://www.stephane-delpeyroux.com/photos/large/169.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     height: 80vh;
 }
-.aPropo p, .containerComp > p, .portf > p, .projet p, .singlPr p, .contLang {
+.aPropo p, .containerComp > p, .portf > p, .projet p, .singlPr p, .btn {
     width: 70%;
 }
 .projet, .competence {
     margin: 2% 1%;
 }
-.competence, .language {
+.competence, .language, .cv {
     background-color: beige;
 }
 .imgProjet, .competence p {
@@ -215,15 +219,15 @@ h2 > span, .span {
 }
 .language {
     padding: 5% 0;
-}
+} 
 .imgLanguage {
-    width: 20%;
+    width: 12%;
     cursor: pointer;
     margin: 1%;
 }
 .bouton {
     background-color: #ff0052;
-    padding: 7px 5px;
+    padding: 2px 3px;
     border-radius: 10%;
 }
 /* ====contact formular=== */
@@ -243,6 +247,21 @@ cursor: pointer;
 }
 #submit {
     width: 100px;
+}
+.htPage {
+    width: 20px;
+    height: 20px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 100;
+}
+.marginBottom {
+    margin-bottom: 10vh;
+}
+.cv {
+    border: 2px solid #ff0052;
+    padding: 0.5%;
 }
 /* ===end contact formular=== */
 
@@ -273,8 +292,20 @@ cursor: pointer;
     .cont {
         width: 70%;
     }
+    .imgLanguage {
+        width: 10%;
+    }
+
+    .htPage {
+        width: 30px;
+        height: 30px;
+    }
 }
 @media screen and (min-width: 1200px) {
+    .htPage {
+        width: 40px;
+        height: 40px;
+    }
     .mobileOnly {
         display: none;
     }
@@ -308,6 +339,9 @@ cursor: pointer;
     }
     .projet {
         width: 30%;
+    }
+    .imgLanguage {
+        width: 6%;
     }
 }
 /* =======end main========== */
